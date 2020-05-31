@@ -119,7 +119,8 @@ class MonodepthOptions:
                                  action="store_true")
         self.parser.add_argument("--no_ssim",
                                  help="if set, disables ssim in the loss",
-                                 action="store_true")
+                                 action="store_true",
+                                 default=False)
         self.parser.add_argument("--weights_init",
                                  type=str,
                                  help="pretrained or scratch",
