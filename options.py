@@ -58,6 +58,10 @@ class TemporalModelOptions:
                                  type=int,
                                  help="frames to load",
                                  default=[0, -1, 1])
+        self.parser.add_argument("--no_ssim",
+                                 help="if set, disables ssim in the loss",
+                                 action="store_true")
+        self.parser.set_defaults(no_ssim=False)
 
     def parse(self):
         self.options = self.parser.parse_args()
