@@ -4,7 +4,7 @@ import json
 import numpy as np
 
 from nuscenes import NuScenes
-from nuscenes.eval.detection import NuScenesEval
+from nuscenes.eval.detection.evaluate import NuScenesEval
 from nuscenes.eval.detection.data_classes import DetectionConfig
 from nuscenes.eval.detection.config import config_factory
 
