@@ -1,0 +1,63 @@
+batch_size: 4
+metrics_threshold: 0.5
+instance_loss: False
+receptive_field: 5
+motion_loss: False
+
+delta_v: 1e-3
+delta_d: 1e-3
+lambda_v: 1.0
+lambda_d: 1.0
+lambda_reg: 0.001
+
+encoder_name: 'resnet'
+pretrained_encoder_path:
+dynamics_model_name:
+decoder_name: 'resnet'
+
+emb_dim: 8
+
+tag: 1
+
+depth_loss: True
+
+motion_loss: True
+
+gpu: True
+h: 256
+w: 512
+
+load_depth: True
+# {'temporal', 'temporal_causal', 'temporal_causal_accum', 'static'}
+loss_name: 'temporal_causal'
+
+monodepth_weight_path: ''
+
+depth_embedding: True
+generate_mask: False
+mask_model_path
+mask_loss: False
+
+data_path
+# {'nuscenes', 'kitti', 'apollo'}
+dataset: 'kitti'
+saved_numpy: 
+n_workers: 4
+
+weight_instance: 1.0
+weight_motion: 1.0
+weight_depth: 1.0
+weight_mask: 1.0
+
+print_iter: 200
+vis_iter: 200
+print_step_time: True
+n_iterations: 1000
+val_iter: 50
+
+debug: False
+instance_seg: True
+checkpoint_name: 'test'
+output_path: 'test/'
+session_name: 'test1'
+config_path: 'config.yml'
