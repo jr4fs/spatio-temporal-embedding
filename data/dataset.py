@@ -131,6 +131,7 @@ class MotionDataset(Dataset):
                                         1: img_filenames[t+1]
                                         }
                 data['input_depth'].append(self.get_depth_input(triplet_img_filename))
+                print("line 134 in dataset.py")
 
             # Add dummy values for first and last time index
             dummy_input = {key: torch.zeros_like(value) for key, value in data['input_depth'][0].items()}
