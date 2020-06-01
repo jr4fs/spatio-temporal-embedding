@@ -24,8 +24,8 @@ depth_loss: True
 motion_loss: True
 
 gpu: True
-h: 256
-w: 512
+h: 128
+w: 256
 
 load_depth: True
 loss_name: 'temporal_causal' # {'temporal', 'temporal_causal', 'temporal_causal_accum', 'static'}
