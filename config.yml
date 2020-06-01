@@ -37,7 +37,7 @@ generate_mask: False
 mask_model_path: ''
 mask_loss: False
 
-data_path: 'data/'
+data_path: 'data/data_mots/'
 # {'nuscenes', 'kitti', 'apollo'}
 dataset: 'kitti'
 saved_numpy: ''
