@@ -226,7 +226,7 @@ class Trainer():
                                       seq_len=self.opt.seq_len, h=self.config['h'], w=self.config['w'],
                                       num_scales=self.num_scales, load_depth_inputs=self.load_depth_inputs,
                                       saved_numpy=self.config['saved_numpy'])
-        print("length of train dataset: ", len(train_dataset))
+        #print("length of train dataset: ", len(train_dataset))
         val_dataset = MotionDataset(self.config['data_path'], dataset=self.config['dataset'], mode='val',
                                     seq_len=self.opt.seq_len, h=self.config['h'], w=self.config['w'],
                                     num_scales=self.num_scales, load_depth_inputs=self.load_depth_inputs,
